@@ -33,7 +33,7 @@ public class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
-    // ¥·©`¥óÇĞ¤êÌæ¤¨¤ÇËÀ¤Ê¤Ê¤¤¥Õ¥é¥°
+    // ã‚·ãƒ¼ãƒ³åˆ‡ã‚Šæ›¿ãˆã§æ­»ãªãªã„ãƒ•ãƒ©ã‚°
     [SerializeField]
     public bool _DontDestroyOnLoad = false;
 
@@ -43,14 +43,14 @@ public class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour
         {
             if (_DontDestroyOnLoad)
             {
-                // ¥·©`¥óÇĞÌæ¤ÇËÀ¤Ê¤Ê¤¤
+                // ã‚·ãƒ¼ãƒ³åˆ‡æ›¿ã§æ­»ãªãªã„
                 DontDestroyOnLoad(this.gameObject);
             }
             Init();
         }
     }
 
-    // ³õÆÚ»¯évÊı¡¢ÅÉÉú¥¯¥é¥¹¤ÇAwake¤ÏÊ¹¤ï¤º¤³¤Ã¤Á¤ò¤Ä¤«¤¦¤³¤È
+    // åˆæœŸåŒ–é–¢æ•°ã€æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§Awakeã¯ä½¿ã‚ãšã“ã£ã¡ã‚’ã¤ã‹ã†ã“ã¨
     protected virtual void Init() { }
 
     protected bool CheckInstance()
@@ -76,7 +76,7 @@ public class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour
     }
 
     /*
-    // ŠÖÆ¥¤¥ó¥¹¥¿¥ó¥¹Ï÷³ı
+    // å¼·åˆ¶ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹å‰Šé™¤
     public void InstanceDestroy()
     {
         Destroy(instance);
